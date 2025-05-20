@@ -6,24 +6,24 @@ import { useState, useRef, useEffect } from "react";
 const experiences = [
   {
     title: "Deloitte",
-    image: "/images/capitol.jpg",
-    description: "As a Data Scientist at Deloitte in Washington DC, I focus on developing AI solutions.",
+    image: "/images/deloitte.jpg",
+    description: "",
   },
   {
     title: "Atos Zdata",
-    image: "/images/capitol.jpg",
-    description: "ddd",
+    image: "/images/atos.jpg",
+    description: "",
   },
   {
     title: "Graduate Research Assistant",
-    image: "/images/capitol.jpg",
-    description: "As a graudate research assistant, I've done project A,B,C and participated to publish paper A,B,C",
+    image: "/images/gwu.jpg",
+    description: "",
   },
-  {
-    title: "Research Assistant",
-    image: "/images/capitol.jpg",
-    description: "As a graudate research assistant, I've done project A,B,C and participated to publish paper A,B,C",
-  },
+//   {
+//     title: "Machine Learning Researcher",
+//     image: "/images/gwu.jpg",
+//     description: "",
+//   },
 ];
 
 export default function About() {

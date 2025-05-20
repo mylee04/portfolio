@@ -25,8 +25,8 @@ export default function Home() {
         {/* right: photos */}
         <div className="flex-1 flex items-center justify-center">
           <img
-            src={`${basePath}/images/capitol.jpg`}
-            alt="Washington DC"
+            src={`${basePath}/images/fam_photo.jpg`}
+            alt="Family"
             width={500}
             height={600}
             className="object-cover rounded-lg shadow-lg max-h-[70vh] w-full"
