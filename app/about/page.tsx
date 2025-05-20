@@ -75,13 +75,16 @@ export default function About() {
     };
   }, []);
 
+  // set basePath for deployment env
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
       {/* profile photo + intro */}
       <div className="flex flex-col items-center mt-12 mb-16">
         <div className="w-[320px] h-[315px] overflow-hidden rounded-full mx-auto mb-6 border-4 border-white">
           <Image
-            src="/images/myphoto.jpg"
+            src={`${basePath}/images/myphoto.jpg`}
             alt="Profile"
             width={320}
             height={160}
@@ -129,7 +132,7 @@ export default function About() {
             >
               <div className="h-64 overflow-hidden">
                 <Image
-                  src={exp.image}
+                  src={`${basePath}${exp.image}`}
                   alt={exp.title}
                   width={600}
                   height={350}
