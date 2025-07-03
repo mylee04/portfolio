@@ -41,13 +41,13 @@ export default function Home() {
           
           {/* Navigation Links */}
           <div className="flex flex-wrap gap-4 mt-8">
-            <a href="/projects" className="border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">
+            <a href={`${basePath}/projects`} className="border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">
               View Projects →
             </a>
-            <a href="/publications" className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
+            <a href={`${basePath}/publications`} className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
               Research Papers
             </a>
-            <a href="/about" className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
+            <a href={`${basePath}/about`} className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
               About Me
             </a>
           </div>
