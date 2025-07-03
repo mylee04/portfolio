@@ -4,15 +4,13 @@ import Image from "next/image";
 import { education, techStack, militaryService } from "../lib/data";
 
 export default function About() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
-
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <div className="flex flex-col items-center pt-12 pb-16 px-4">
         <div className="w-[320px] h-[315px] overflow-hidden rounded-full mx-auto mb-8 border-4 border-white">
           <Image
-            src={`${basePath}/images/myphoto.jpg`}
+            src="/images/myphoto.jpg"
             alt="Myungeun Lee Profile"
             width={320}
             height={315}
@@ -142,13 +140,13 @@ export default function About() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <a href={`${basePath}/projects`} className="border border-white text-white px-6 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-200">
+            <a href="/projects" className="border border-white text-white px-6 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-200">
               View My Work →
             </a>
-            <a href={`${basePath}/publications`} className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
+            <a href="/publications" className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
               Research Papers
             </a>
-            <a href={`${basePath}/contact`} className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
+            <a href="/contact" className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
               Get In Touch
             </a>
           </div>
