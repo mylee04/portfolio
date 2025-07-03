@@ -142,13 +142,13 @@ export default function About() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <a href="/projects" className="border border-white text-white px-6 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-200">
+            <a href={`${basePath}/projects`} className="border border-white text-white px-6 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-200">
               View My Work →
             </a>
-            <a href="/publications" className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
+            <a href={`${basePath}/publications`} className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
               Research Papers
             </a>
-            <a href="/contact" className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
+            <a href={`${basePath}/contact`} className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
               Get In Touch
             </a>
           </div>
