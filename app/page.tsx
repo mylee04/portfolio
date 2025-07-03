@@ -3,6 +3,9 @@
 import Image from "next/image";
 
 export default function Home() {
+  // set basePath for deployment env
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+  
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center">
       <div className="flex flex-col md:flex-row w-full max-w-6xl mt-12 gap-8 px-4 flex-1">
@@ -52,7 +55,7 @@ export default function Home() {
         {/* right: photos */}
         <div className="flex-1 flex items-center justify-center">
           <img
-            src={`/images/fam_photo.jpg`}
+            src={`${basePath}/images/fam_photo.jpg`}
             alt="Family"
             width={500}
             height={600}

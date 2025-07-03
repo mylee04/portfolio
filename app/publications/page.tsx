@@ -3,6 +3,8 @@
 import { publications } from "../lib/data";
 
 export default function Publications() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}

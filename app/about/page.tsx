@@ -4,13 +4,15 @@ import Image from "next/image";
 import { education, techStack, militaryService } from "../lib/data";
 
 export default function About() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <div className="flex flex-col items-center pt-12 pb-16 px-4">
         <div className="w-[320px] h-[315px] overflow-hidden rounded-full mx-auto mb-8 border-4 border-white">
           <Image
-            src="/images/myphoto.jpg"
+            src={`${basePath}/images/myphoto.jpg`}
             alt="Myungeun Lee Profile"
             width={320}
             height={315}
