@@ -17,10 +17,40 @@ export default function Home() {
           </h2>
           <div className="border-b border-white w-32 mb-6"></div>
           <p className="text-base md:text-lg leading-relaxed">
-            Since December 2022, I have been working in the field of Generative AI and large language model (LLM) application development. My main interest lies in bringing GenAI into real-world, everyday applications. As an engineer and scientist, I am proactive and adaptable, always eager to embrace and implement new technologies.          </p>
+            Since December 2022, I have been working in the field of Generative AI and large language model (LLM) application development. My main interest lies in bringing GenAI into real-world, everyday applications. As an engineer and scientist, I am proactive and adaptable, always eager to embrace and implement new technologies.
+          </p>
           <p className="italic mt-6 text-lg text-gray-400">
             Automate everything possible.
           </p>
+          
+          {/* Quick Stats */}
+          <div className="flex flex-wrap gap-6 mt-8 text-sm">
+            <div className="flex items-center gap-2">
+              <span className="text-green-400">📊</span>
+              <span>5 Published Papers</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-blue-400">🚀</span>
+              <span>40% Efficiency Improvement</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-purple-400">💾</span>
+              <span>46M+ Daily News Data Processing</span>
+            </div>
+          </div>
+          
+          {/* Navigation Links */}
+          <div className="flex flex-wrap gap-4 mt-8">
+            <a href="/projects" className="border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">
+              View Projects →
+            </a>
+            <a href="/publications" className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
+              Research Papers
+            </a>
+            <a href="/about" className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
+              About Me
+            </a>
+          </div>
         </div>
         {/* right: photos */}
         <div className="flex-1 flex items-center justify-center">
