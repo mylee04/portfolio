@@ -27,7 +27,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-6 mt-8 text-sm">
             <div className="flex items-center gap-2">
               <span className="text-green-400">📊</span>
-              <span>5 Published Papers</span>
+              <span>My Research Contributions</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-blue-400">🚀</span>
@@ -45,7 +45,10 @@ export default function Home() {
               View Projects →
             </a>
             <a href={`${basePath}/publications`} className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
-              Research Papers
+              Publications
+            </a>
+            <a href={`${basePath}/presentations`} className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
+              Presentations
             </a>
             <a href={`${basePath}/about`} className="border border-gray-600 text-gray-300 px-6 py-2 text-sm hover:bg-gray-600 hover:text-white transition-colors duration-200">
               About Me

@@ -85,9 +85,12 @@ export default function Projects() {
                 </div>
 
                 {/* Learn More Button */}
-                <button className="mt-auto border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200">
+                <Link
+                  href={`${basePath}/projects/${project.id}`}
+                  className="mt-auto border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 text-center"
+                >
                   Learn More →
-                </button>
+                </Link>
               </div>
             </div>
           ))}
