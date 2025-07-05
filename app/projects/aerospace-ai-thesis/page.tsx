@@ -56,11 +56,11 @@ export default function AerospaceAIThesisPage() {
             <div>
               <h3 className="text-2xl font-bold text-blue-400 mb-3">From CAD to FEA Model</h3>
               <p className="text-lg text-gray-300 mb-4">
-                I began by constructing a high-fidelity Finite Element (FEA) model of the rocket fairing using **ANSYS**. This involved creating a detailed mesh to accurately represent its complex geometry and material properties.
+                I began by constructing a high-fidelity Finite Element (FEA) model of the rocket fairing using <strong>ANSYS</strong>. This involved creating a detailed mesh to accurately represent its complex geometry and material properties.
               </p>
               <h3 className="text-2xl font-bold text-blue-400 mb-3">Proprietary Dataset Generation</h3>
               <p className="text-lg text-gray-300">
-                Instead of using off-the-shelf data, I simulated **100 unique defect scenarios**. By applying realistic aerodynamic loads and thermal conditions, I generated a rich, proprietary dataset of stress and strain distributions—the perfect fuel for our AI model.
+                Instead of using off-the-shelf data, I simulated <strong>100 unique defect scenarios</strong>. By applying realistic aerodynamic loads and thermal conditions, I generated a rich, proprietary dataset of stress and strain distributions—the perfect fuel for our AI model.
               </p>
             </div>
             <div className="bg-gray-900 p-4 rounded-lg">
