@@ -5,8 +5,6 @@ import Link from "next/link";
 import { projects } from "../lib/data";
 
 export default function Projects() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
-
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
@@ -31,7 +29,7 @@ export default function Projects() {
               {/* Project Image */}
               <div className="h-48 overflow-hidden bg-white flex items-center justify-center">
                 <Image
-                  src={`${basePath}${project.image}`}
+                  src={project.image}
                   alt={project.title}
                   width={400}
                   height={200}
@@ -86,7 +84,7 @@ export default function Projects() {
 
                 {/* Learn More Button */}
                 <Link
-                  href={`${basePath}/projects/${project.id}`}
+                  href={`/projects/${project.id}`}
                   className="mt-auto border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 text-center"
                 >
                   Learn More →
