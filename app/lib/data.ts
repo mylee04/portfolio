@@ -119,36 +119,50 @@ export const presentations = [
     id: 1,
     title: "LLM-based Nursing Diagnostic AI with Human-System Interaction for Effective Training and Nursing Home Support",
     presenters: "Myungeun Lee",
-    conference: "The 21st International Conference on Ubiquitous Robots",
+    venue: "The 21st International Conference on Ubiquitous Robots",
     date: "June 2024",
-    location: "New York City, New York",
+    location: "New York University, New York",
     type: "Workshop Presentation",
     status: "Presented",
     abstract: "This work presents a large language model-based nursing diagnostic AI system designed to support nursing home operations through effective human-system interaction and training protocols.",
-    keywords: ["LLM", "Nursing AI", "Human-Computer Interaction", "Healthcare AI", "Training Systems"],
-    link: "#"
+    keywords: ["LLM", "RAG", "Healthcare AI", "Human-In-The-Loop Continuous Learning", "Nursing Home Support", "Nursing Informatics", "Nursing Diagnosis"]
   },
   {
     id: 2,
     title: "GenAI Applications in Accounting and Auditing",
     presenters: "Myungeun Lee",
-    conference: "UVA McIntire School of Commerce",
+    venue: "UVA McIntire School of Commerce",
     date: "April 2025",
-    type: "Presentation",
+    location: "Charlottesville, Virginia",
+    type: "Invited Talk",
     status: "Presented",
     abstract: "Presented comprehensive overview of GenAI applications and use-cases in accounting and auditing",
-    keywords: ["GenAI", "Accounting AI", "Auditing Systems", "Business Applications"],
-    link: "#"
+    keywords: ["GenAI", "Accounting AI", "Auditing Systems", "Business Applications"]
   },
   {
     id: 3,
     title: "AI-Based Interactive Telemedicine Chatbot System for Medical Inquiries",
-    presenters: "Myungeun Lee",
-    conference: "International Conference on Medical AI",
-    date: "2024",
-    type: "Workshop Presentation",
-    link: "#",
+    presenters: "Chung Hyuk Park",
+    venue: "IEEE-ROMAN",
+    date: "August 2023",
+    location: "Busan, South Korea",
+    type: "Conference Presentation",
+    status: "Presented",
+    abstract: "Interactive telemedicine chatbot system for medical inquiries using AI technology",
+    keywords: ["Telemedicine", "Chatbot", "Medical AI", "LLM", "NLP", "Healthcare Technology"]
   },
+  {
+    id: 4,
+    title: "AI-Based Interactive Telemedicine Chatbot System for Medical Inquiries",
+    presenters: "Myungeun Lee, Krystian Burum",
+    venue: "George Washington University",
+    date: "April 2023",
+    location: "Washington D.C.",
+    type: "Poster Presentation",
+    status: "Presented",
+    abstract: "Interactive telemedicine chatbot system for medical inquiries using AI technology",
+    keywords: ["Telemedicine", "Chatbot", "Medical AI", "LLM", "NLP", "Healthcare Technology"]
+  }
 ];
 
 presentations.sort((a, b) => {
