@@ -53,7 +53,7 @@ export default function About() {
             <div className="text-center">
               <div className="text-3xl mb-2">🚀</div>
               <h3 className="text-lg font-semibold mb-1">Innovation Focus</h3>
-              <p className="text-gray-400 text-sm">GenAI • Healthcare AI • Automation</p>
+              <p className="text-gray-400 text-sm">GenAI • Multimodal AI • Automation • Image & Speech Processing</p>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function About() {
           </div>
           
           <div className="bg-gray-900 rounded-lg p-6">
-            <h3 className="text-xl font-semibold mb-4 text-purple-400">AI/ML Libraries</h3>
+            <h3 className="text-xl font-semibold mb-4 text-purple-400">Familiar Libraries</h3>
             <div className="flex flex-wrap gap-2">
               {techStack.libraries.map((tech, index) => (
                 <span key={index} className="px-3 py-1 bg-purple-800 text-purple-200 text-sm rounded-full">
@@ -140,18 +140,6 @@ export default function About() {
             businesses more efficient, and society more equitable. Every line of code I write is a step towards 
             that automated future.
           </p>
-          
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <a href="/projects" className="border border-white text-white px-6 py-3 text-sm hover:bg-white hover:text-black transition-colors duration-200">
-              View My Work →
-            </a>
-            <a href="/publications" className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
-              Research Papers
-            </a>
-            <a href="/contact" className="border border-gray-400 text-gray-300 px-6 py-3 text-sm hover:bg-gray-400 hover:text-black transition-colors duration-200">
-              Get In Touch
-            </a>
-          </div>
         </div>
       </div>
     </div>
