@@ -29,7 +29,7 @@ export default function Contact() {
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white flex flex-col items-center justify-center">
       <div className="flex w-full max-w-6xl flex-col md:flex-row items-stretch gap-8 px-4 py-12">
         {/* Left side */}
-        <div className="flex-1 flex flex-col justify-between p-4">
+        <div className="flex-1 flex flex-col p-4">
           <div>
             <h1 className="text-5xl md:text-6xl font-mono font-bold mb-8">
               Let's Connect!
