@@ -85,12 +85,14 @@ export default function Projects() {
                 </div>
 
                 {/* Learn More Button */}
-                <Link
-                  href={`/projects/${project.id}`}
-                  className="mt-auto border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 text-center"
-                >
-                  Learn More →
-                </Link>
+                {(project.company.includes('GWU') || project.company.includes('Bauman')) && (
+                  <Link
+                    href={`/projects/${project.id}`}
+                    className="mt-auto border border-white text-white px-4 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 text-center"
+                  >
+                    Learn More →
+                  </Link>
+                )}
               </div>
             </div>
           ))}
