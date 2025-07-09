@@ -114,7 +114,7 @@ export default function Publications() {
               <div className="flex gap-4">
                 {pub.link && (
                   <a
-                    href={`${basePath}${pub.link}`}
+                    href={pub.link.startsWith('http') ? pub.link : `${basePath}${pub.link}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="border border-white text-white px-6 py-2 text-sm hover:bg-white hover:text-black transition-colors duration-200 flex items-center justify-center"

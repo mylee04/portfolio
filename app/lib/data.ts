@@ -67,12 +67,12 @@ export const projects = [
   },
   {
     id: "nursing-ai-system",
-    title: "Nursing AI Diagnostic System",
+    title: "Nursing AI Diagnostic System with Human-in-the-Loop",
     company: "GWU Research Lab",
     period: "2023-2024",
-    description: "Built nursing AI using large language models to expedite diagnosis process",
-    impact: "Substitute for nurses in diagnostic processes",
-    techStack: ["Python", "LLM", "GPT 3.5", "AWS Lambda", "Cloudflare"],
+    description: "Led the end-to-end development of an intelligent nursing diagnostic system. I designed and implemented a Retrieval-Augmented Generation (RAG) system that references a knowledge base of 80+ documented nursing scenarios. When new patient data is entered, the system retrieves the top 3 most similar scenarios to inform its diagnostic suggestions.",
+    impact: "Crucially, I architected a Human-in-the-Loop (HITL) feedback mechanism. Nurses can provide feedback on the AI's suggestions, which is then vectorized and stored in our Deeplake (Vector DB). This creates a self-improving system where accuracy and relevance continuously increase with each interaction.",
+    techStack: ["RAG", "Human-in-the-loop", "GPT-4", "Vector Database", "Data Lake", "Python", "API Development"],
     image: "/images/gwu.png",
     status: "Research"
   },
@@ -81,9 +81,9 @@ export const projects = [
     title: "Multi-modal AI for Autism Analysis",
     company: "GWU Research Lab",
     period: "2023-2024",
-    description: "Analyzed autism patient videos using multi-modal AI across image, audio, and text",
-    impact: "Processed 3,875 video files for behavioral analysis",
-    techStack: ["Python", "Multi-modal AI", "PyTorch", "Computer Vision", "NLP"],
+    description: "I was responsible for the entire audio processing pipeline. My primary role was to extract and analyze audio from raw video footage, tackling the significant challenge of low-quality audio in Korean. I developed a noise reduction process using spectral subtraction and a filtering logic to isolate the child's voice from background noise and parental speech, significantly improving the quality of data for the model.",
+    impact: "This work was critical for enabling the analysis of 'in-the-wild' videos, a key goal of our research. By successfully processing the audio data, I helped create a system that provides objective, data-driven insights to support clinicians, making behavioral analysis more efficient and accessible.",
+    techStack: ["Audio Processing", "Noise Reduction", "Spectral Subtraction", "Korean NLP", "Speech Recognition", "Python", "Multi-modal AI"],
     image: "/images/gwu.png",
     status: "Research"
   },
@@ -100,12 +100,12 @@ export const projects = [
   },
   {
     id: "pepper-robot-integration",
-    title: "Pepper Robot AI Integration",
+    title: "Pepper Robot AI Integration for Healthcare",
     company: "GWU Research Lab",
     period: "2023",
-    description: "Integrated Pepper robot with language model for oral Q&A system",
-    impact: "Interactive medical chatbot with speech recognition and TTS",
-    techStack: ["Python", "Robotics", "Speech Recognition", "TTS", "GPT 3.5"],
+    description: "I took over a stalled project that used a traditional NLP model and a Unity 3D avatar. I completely redesigned the system by integrating the GPT API for fluid conversation and OpenAI's Whisper API for robust speech-to-text and text-to-speech capabilities. The virtual avatar was replaced with a physical Pepper robot for tangible user interaction.",
+    impact: "This overhaul transformed a non-interactive prototype into a successful project. The new system was not only presented at a university poster session but was also significant enough for my supervising professor to present at an academic conference.",
+    techStack: ["GPT API", "Whisper API", "STT/TTS", "Pepper Robot", "Human-Robot Interaction", "Python", "API Integration", "OpenAI", "Unity 3D"],
     image: "/images/gwu.png",
     status: "Research"
   }
@@ -214,7 +214,7 @@ export const publications = [
     status: "Published",
     abstract: "Standardized nursing languages play a crucial role in facilitating holistic nursing care, but their full benefits are still being realized. However, the implementation of NNN linkages and their impact on nursing processes and nursing home (NH) residents' outcomes, as well as the identification of facility and resident factors, remain unexplored. The purpose of this study was to examine (a) frequently occurring NNN linkages and (b) related facility and resident factors on the use of NANDA, NIC, and NOC for NH residents. Data were collected from 273 residents in 19 NHs in Korea 19 NHs in Korea, with structured questionnaires administered to NH registered nurses using a newly developed smartphone application. Descriptive statistics, ANOVA, and ANCOVA were used for the data analysis. We identified that factors, such as case mix index (resident acuity), age of resident, year of facility establishment, facility ownership status, and admission period of residents, are related to the use of NANDA, NIC, and NOC. Nine NNN linkages were newly identified in this study, mostly centered on fall prevention. The findings provide various approaches to address the risk of falls in NHs considering environmental, physical, and psychological factors. This study contributes to the foundation of evidence related to NHs by collecting specific data on the nursing process for the physiological, behavioral, safety, family, health system, and community areas applied to the residents of long-term care facilities at the national level. Future research in different settings and tailored population is needed.",
     keywords: ["Nursing Informatics", "Digital Health", "Standardized Nursing Language", "Mobile Health (mHealth)", "Long-Term Care"],    
-    link: "https://doi.org/10.1093/geroni/igae098.2801"
+    link: "https://academic.oup.com/innovateage/article/8/Supplement_1/866/7938568?login=false"
   },
   {
     id: 2,
