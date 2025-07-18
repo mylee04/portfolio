@@ -24,12 +24,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full top-0 z-50 flex items-center justify-between py-4 px-8 bg-white/90 dark:bg-black/80 backdrop-blur-sm shadow-sm">
-      <Link href="/" className="text-xl font-mono font-bold">
+    <nav className="fixed w-full top-0 z-50 flex items-center justify-between py-4 px-4 sm:px-8 bg-white/90 dark:bg-black/80 backdrop-blur-sm shadow-sm">
+      <Link href="/" className="text-lg sm:text-xl font-mono font-bold flex-shrink-0">
         {personalInfo.name}
       </Link>
-      <div className="flex items-center gap-6">
-        <ul className="flex gap-6 text-sm font-medium">
+      <div className="flex items-center gap-2 sm:gap-6">
+        <ul className="flex gap-2 sm:gap-6 text-xs sm:text-sm font-medium">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
@@ -38,7 +38,7 @@ export default function Navbar() {
                   isActive(link.href)
                     ? "font-bold text-black dark:text-white"
                     : "text-gray-500 dark:text-gray-400"
-                } hover:underline transition-colors`}
+                } hover:underline transition-colors whitespace-nowrap`}
               >
                 {link.name}
               </Link>
