@@ -68,7 +68,7 @@ export default function Home() {
         {/* Right: Photos */}
         <div className="flex-1 flex items-center justify-center">
           <Image
-            src={`${basePath}/images/nyc_family_photo.HEIC`}
+            src={`${basePath}/images/nyc_family_photo.jpg`}
             alt="Family"
             width={500}
             height={600}
