@@ -31,7 +31,7 @@ export default function Contact() {
         {/* Left side */}
         <div className="flex-1 flex flex-col p-4">
           <div>
-            <h1 className="text-5xl md:text-6xl font-mono font-bold mb-8">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold mb-8">
               Let's Connect!
             </h1>
             <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">

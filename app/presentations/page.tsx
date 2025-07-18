@@ -22,7 +22,7 @@ export default function Presentations() {
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       <div className="pt-12 pb-8 px-4">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-mono font-bold mb-4">Presentations</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-mono font-bold mb-4">Presentations</h1>
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl">
             Sharing insights and research findings with academic and industry audiences.
           </p>
