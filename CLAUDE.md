@@ -109,6 +109,14 @@ my-website/
 - **Image management**: Store in `/public/images/` with descriptive names
 - **Commit messages**: Use conventional commits with clear descriptions
 
+## Development References
+- **[SOFTWARE_PRINCIPLES.md](./SOFTWARE_PRINCIPLES.md)**: Comprehensive guide to fundamental software development principles by industry masters (Fowler, Martin, Beck, Zimmermann, Sajaniemi)
+- **Refactoring**: Martin Fowler's principles for code improvement
+- **Clean Code**: Robert Martin's SOLID principles and clean code rules
+- **TDD**: Kent Beck's Test-Driven Development methodology
+- **API Design**: Olaf Zimmermann's microservice patterns
+- **Variable Roles**: Sajaniemi's 11 stereotypical variable roles
+
 ## Using Gemini CLI for Large Codebase Analysis
 
 When analyzing large codebases or multiple files that might exceed context limits, use the Gemini CLI with its massive context window. Use `gemini -p` to leverage Google Gemini's large context capacity.
