@@ -8,7 +8,7 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
-      <div className="flex flex-col items-center pt-12 pb-16 px-4">
+      <div className="flex flex-col items-center pt-8 pb-16 px-4">
         <div className="w-[320px] h-[315px] overflow-hidden rounded-full mx-auto mb-8 border-4 border-gray-200 dark:border-white">
           <Image
             src={`${basePath}/images/myphoto.jpg`}
