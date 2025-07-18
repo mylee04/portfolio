@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Myungeun Lee - Portfolio
 
-## Getting Started
+A modern, responsive portfolio website showcasing my work in Generative AI, Data Science, and Software Engineering.
 
-First, run the development server:
+🌐 **Live Site**: [https://mylee04.github.io/portfolio](https://mylee04.github.io/portfolio)
 
+## Overview
+
+This portfolio highlights my professional experience, research projects, publications, and presentations in the field of AI and data science. Built with modern web technologies, it features a clean design with dark/light mode support and full responsiveness across all devices.
+
+## Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) with App Router
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment**: [GitHub Pages](https://pages.github.com/)
+- **UI Features**: Dark/Light mode with next-themes
+
+## Key Features
+
+- 📱 Fully responsive design for all screen sizes
+- 🌓 Dark/Light mode toggle with system preference detection
+- 🚀 Fast page loads with Next.js optimization
+- 📊 Dynamic project showcase with categorized filtering
+- 📝 Comprehensive sections for projects, publications, and presentations
+- 🔗 Integrated contact form with direct email functionality
+
+## Portfolio Sections
+
+### Projects
+Showcasing AI and data science projects including:
+- Enterprise-scale data pipelines processing 46M+ daily articles
+- AI-driven content analysis and classification systems
+- Multi-modal AI research for healthcare applications
+- Robotics and human-computer interaction projects
+
+### Publications
+Academic papers and conference proceedings in:
+- Healthcare AI and nursing informatics
+- Multi-modal deep learning for autism research
+- Standardized nursing language systems
+
+### Presentations
+Invited talks and conference presentations at:
+- IEEE International Conferences
+- UVA McIntire School of Commerce
+- George Washington University
+
+## Development
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+
+### Local Setup
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/mylee04/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+my-website/
+├── app/
+│   ├── components/     # Reusable UI components
+│   ├── lib/           # Data and utilities
+│   ├── projects/      # Project pages
+│   ├── publications/  # Publications page
+│   ├── presentations/ # Presentations page
+│   ├── about/         # About page
+│   └── contact/       # Contact page
+├── public/
+│   └── images/        # Static images
+└── package.json       # Dependencies
+```
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Email**: mylee@deloitte.com
+- **LinkedIn**: [Myungeun Lee](https://www.linkedin.com/in/myungeun-lee-1a67a4216/)
+- **GitHub**: [@mylee04](https://github.com/mylee04)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+© 2024 Myungeun Lee. All rights reserved.
