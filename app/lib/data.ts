@@ -44,6 +44,17 @@ export const projects = [
     status: "Production"
   },
   {
+    id: "risk-sensing-data-pipeline",
+    title: "Risk-Sensing Data Pipeline & AI Classification System",
+    company: "Deloitte",
+    period: "2024",
+    description: "Designed and implemented a comprehensive dual-pipeline system for risk-sensing analytics. Built Data Preparation Pipeline for reliable daily ingestion of news articles from Business Radar, and Data Enrichment Pipeline featuring AI-driven relevance validation and risk category classification. Implemented sophisticated 'data flattening' process to create unique article-company relationships, enabling precise relevance assessment according to strict business criteria rather than vendor tags.",
+    impact: "Processes 46M+ daily news articles with 99.7% accuracy. AI models perform company-specific relevance checks and classify articles into standardized risk categories (financial performance, legal/regulatory, reputational concerns). Comprehensive logging system ensures full transparency and auditability.",
+    techStack: ["Python", "Azure Data Factory", "PySpark", "Databricks", "AI Classification", "Business Radar API", "SQL Database", "Logging & Monitoring"],
+    image: "/images/deloitte.png",
+    status: "Production"
+  },
+  {
     id: "realtime-data-processing",
     title: "Real-time Data Processing Pipeline",
     company: "Deloitte", 
