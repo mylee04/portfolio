@@ -22,6 +22,42 @@ export const experiences = [
 // projects
 export const projects = [
   {
+    id: "claude-code-subagents",
+    title: "Claude Code Subagents",
+    company: "Personal Project",
+    period: "2025 - Present",
+    description: "A comprehensive collection of AI agents that work as a personalized development team. Features dynamic team assembly where the agent-assembler reads project's claude.md file and generates custom agents tailored to the tech stack. Includes 15+ specialized agents organized by domain (development, security, infrastructure, data/AI) with two types of conductor agents: Agent Creators that generate new agent files and Agent Orchestrators that coordinate existing agents for complex tasks.",
+    impact: "Revolutionizes AI-assisted development by providing a dynamic, project-specific AI team. The two-layer system ensures developers have the right agents for their specific project through generation, while those agents work together effectively through orchestration. Enables complex task breakdown and distribution with no duplicate effort or gaps in coverage.",
+    techStack: ["AI Agent Design", "Prompt Engineering", "YAML", "Markdown", "Shell Scripting", "Agent Orchestration", "Claude Code Integration", "Dynamic Team Assembly"],
+    image: "/images/3dots.png",
+    status: "Active",
+    github: "https://github.com/mylee04/claude-code-subagents"
+  },
+  {
+    id: "claude-notify",
+    title: "Claude-Notify: Cross-Platform Desktop Notifications for AI Workflows",
+    company: "Personal Project",
+    period: "2025 - Present",
+    description: "Developed a cross-platform desktop notification system for Claude Code that enhances developer productivity by providing real-time alerts when AI tasks complete, errors occur, or user input is needed. Features native desktop notifications across macOS, Windows, and Linux with customizable sound alerts, global and project-specific settings, and seamless integration with Claude Code workflows.",
+    impact: "Eliminated context switching for developers by providing instant awareness of Claude Code status, reducing idle time and improving workflow efficiency. Homebrew package distribution ensures easy installation and updates for the developer community. Quick aliases and flexible configuration options make it adaptable to individual workflow preferences.",
+    techStack: ["Go", "Cross-platform Development", "Desktop Notifications", "Homebrew", "CLI Development", "System APIs", "Configuration Management"],
+    image: "/images/3dots.png",
+    status: "Active",
+    github: "https://github.com/mylee04/claude-notify"
+  },
+  {
+    id: "claude-arena",
+    title: "Claude Arena: Gamified Analytics Platform for AI Code Generation",
+    company: "Personal Project",
+    period: "2025 - Present",
+    description: "Built an innovative gamification platform that transforms Claude Code usage analytics into a competitive experience. The platform imports Sniffly analytics data and creates engaging leaderboards beyond traditional spending metrics, featuring categories like 'The Precisionist' for lowest error rates and 'Speed Demon' for fastest task completions. Includes comprehensive user profiles, achievement badges, and a planned data marketplace for analytics insights.",
+    impact: "Revolutionizes how developers understand and optimize their AI coding practices by making performance metrics engaging and actionable. Fosters a community of AI-assisted developers who can learn from each other's patterns and best practices. The planned data marketplace will enable new revenue streams while providing valuable insights into AI-assisted development workflows.",
+    techStack: ["TypeScript", "Next.js", "Analytics Integration", "Data Visualization", "Gamification Design", "User Profiling", "Marketplace Architecture", "Sniffly API"],
+    image: "/images/3dots.png",
+    status: "Active",
+    github: "https://github.com/mylee04/claude-arena"
+  },
+  {
     id: "aerospace-ai-thesis",
     title: "AI-Driven Defect Detection for Aerospace Composites",
     company: "Bauman Moscow State Technical University (Bachelor's Thesis)",
@@ -108,7 +144,7 @@ export const projects = [
     techStack: ["GPT API", "Whisper API", "STT/TTS", "Pepper Robot", "Human-Robot Interaction", "Python", "API Integration", "OpenAI", "Unity 3D"],
     image: "/images/gwu.png",
     status: "Research"
-  }
+  },
 ];
 
 projects.sort((a, b) => {

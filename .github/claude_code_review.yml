@@ -1,0 +1,5 @@
+# .github/claude-code-review.yml
+direct_prompt: |
+  Please review this pull request. Focus on finding bugs, security vulnerabilities (especially XSS), and performance issues in React components.
+  Verify that any new UI components align with our project's design system (e.g., MUI, Tailwind).
+  Be concise and report only on significant findings.

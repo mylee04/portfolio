@@ -72,14 +72,26 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {(project.company.includes('GWU') || project.company.includes('Bauman')) && (
-                  <Link
-                    href={`/projects/${project.id}`}
-                    className="mt-auto border border-black dark:border-white text-black dark:text-white px-4 py-2 text-sm hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-200 text-center"
-                  >
-                    Learn More →
-                  </Link>
-                )}
+                <div className="mt-auto flex gap-2">
+                  {(project as any).github && (
+                    <a
+                      href={(project as any).github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 border border-black dark:border-white text-black dark:text-white px-4 py-2 text-sm hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-200 text-center"
+                    >
+                      View on GitHub →
+                    </a>
+                  )}
+                  {(project.company.includes('GWU') || project.company.includes('Bauman')) && (
+                    <Link
+                      href={`/projects/${project.id}`}
+                      className="flex-1 border border-black dark:border-white text-black dark:text-white px-4 py-2 text-sm hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-200 text-center"
+                    >
+                      Learn More →
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           ))}
