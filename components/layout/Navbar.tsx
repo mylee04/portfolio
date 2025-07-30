@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { personalInfo } from "../lib/data";
+import { personalInfo } from "@/app/lib/data";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function Navbar() {

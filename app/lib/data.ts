@@ -4,17 +4,17 @@ import { stat } from "fs";
 export const experiences = [
   {
     title: "Deloitte",
-    image: "/images/deloitte.png",
+    image: "/images/companies/deloitte.png",
     description: "Data Scientist (January 2024 – Present)\n\n• Implemented agentic review AI with RAG, improving processing efficiency by 40% and reducing manual review time by 50%\n• Streamlined real-time data workflow managing 46M+ daily news data with 99.7% accuracy\n• Designed risk-sensing GenAI service and SQL Database for clients\n• Built GenAI product for auditors using Azure PromptFlow with LLM optimization\n• Presented at UVA McIntire School of Commerce on GenAI Applications in Accounting and Auditing",
   },
   {
     title: "Atos Zdata",
-    image: "/images/atos.jpg",
+    image: "/images/companies/atos.jpg",
     description: "Data Scientist Intern (May 2023 – August 2023)\n\n• Developed generative AI private LLM using RAG, Langchain, and Vector Database\n• Created automatic response system for RFPs, RFIs, and SoWs\n• Built real-time updating Vector Database system\n• Compared LLM models: Llama-2, Falcon, and GPT4ALL",
   },
   {
     title: "Graduate Research Assistant",
-    image: "/images/gwu.png",
+    image: "/images/companies/gwu.png",
     description: "GWU Assistive Robotics & Tele-MEDicine LAB (October 2022 – May 2024)\n\n• Built nursing AI using LLMs to expedite diagnosis process\n• Analyzed 3,875 video files of autism patients using multi-modal AI\n• Created AI medical chatbot with GPT 3.5, AWS Lambda, and Cloudflare\n• Integrated Pepper robot with language model for oral Q&A system",
   },
 ];
@@ -29,7 +29,7 @@ export const projects = [
     description: "A comprehensive collection of AI agents that work as a personalized development team. Features dynamic team assembly where the agent-assembler reads project's claude.md file and generates custom agents tailored to the tech stack. Includes 15+ specialized agents organized by domain (development, security, infrastructure, data/AI) with two types of conductor agents: Agent Creators that generate new agent files and Agent Orchestrators that coordinate existing agents for complex tasks.",
     impact: "Revolutionizes AI-assisted development by providing a dynamic, project-specific AI team. The two-layer system ensures developers have the right agents for their specific project through generation, while those agents work together effectively through orchestration. Enables complex task breakdown and distribution with no duplicate effort or gaps in coverage.",
     techStack: ["AI Agent Design", "Prompt Engineering", "YAML", "Markdown", "Shell Scripting", "Agent Orchestration", "Claude Code Integration", "Dynamic Team Assembly"],
-    image: "/images/3dots.png",
+    image: "/images/projects/3dots.png",
     status: "Active",
     github: "https://github.com/mylee04/claude-code-subagents"
   },
@@ -41,7 +41,7 @@ export const projects = [
     description: "Developed a cross-platform desktop notification system for Claude Code that enhances developer productivity by providing real-time alerts when AI tasks complete, errors occur, or user input is needed. Features native desktop notifications across macOS, Windows, and Linux with customizable sound alerts, global and project-specific settings, and seamless integration with Claude Code workflows.",
     impact: "Eliminated context switching for developers by providing instant awareness of Claude Code status, reducing idle time and improving workflow efficiency. Homebrew package distribution ensures easy installation and updates for the developer community. Quick aliases and flexible configuration options make it adaptable to individual workflow preferences.",
     techStack: ["Go", "Cross-platform Development", "Desktop Notifications", "Homebrew", "CLI Development", "System APIs", "Configuration Management"],
-    image: "/images/3dots.png",
+    image: "/images/projects/3dots.png",
     status: "Active",
     github: "https://github.com/mylee04/claude-notify"
   },
@@ -53,7 +53,7 @@ export const projects = [
     description: "Built an innovative gamification platform that transforms Claude Code usage analytics into a competitive experience. The platform imports Sniffly analytics data and creates engaging leaderboards beyond traditional spending metrics, featuring categories like 'The Precisionist' for lowest error rates and 'Speed Demon' for fastest task completions. Includes comprehensive user profiles, achievement badges, and a planned data marketplace for analytics insights.",
     impact: "Revolutionizes how developers understand and optimize their AI coding practices by making performance metrics engaging and actionable. Fosters a community of AI-assisted developers who can learn from each other's patterns and best practices. The planned data marketplace will enable new revenue streams while providing valuable insights into AI-assisted development workflows.",
     techStack: ["TypeScript", "Next.js", "Analytics Integration", "Data Visualization", "Gamification Design", "User Profiling", "Marketplace Architecture", "Sniffly API"],
-    image: "/images/3dots.png",
+    image: "/images/projects/3dots.png",
     status: "Active",
     github: "https://github.com/mylee04/claude-arena"
   },
@@ -65,7 +65,7 @@ export const projects = [
     description: "Developed a novel methodology combining Finite Element Analysis (FEA) with Machine Learning to predict structural integrity in aerospace components.",
     impact: "Achieved 95-97% predictive accuracy by generating a proprietary dataset from scratch via complex ANSYS simulations.",
     techStack: ["ANSYS (FEA)", "Machine Learning", "Computer Vision", "Data Generation", "Python"],
-    image: "/images/bmstu.png",
+    image: "/images/companies/bmstu.png",
     status: "Academic"
   },
   {
@@ -76,7 +76,7 @@ export const projects = [
     description: "Implemented comprehensive AI system for automated content review, relevance validation, and risk category classification. Built sophisticated models to perform company-specific relevance checks against strict business criteria, moving beyond vendor tags to ensure precise data quality. AI models classify content into standardized categories including financial performance, legal/regulatory issues, and reputational concerns.",
     impact: "40% efficiency improvement, 50% reduction in manual review time. AI-driven relevance validation ensures only truly relevant content proceeds to downstream analysis, significantly improving data quality and analytical accuracy.",
     techStack: ["Python", "RAG", "Azure", "LLM", "AI Classification", "Vector Database", "Business Intelligence"],
-    image: "/images/deloitte.png",
+    image: "/images/companies/deloitte.png",
     status: "Production"
   },
   {
@@ -87,7 +87,7 @@ export const projects = [
     description: "Designed and implemented comprehensive dual-pipeline architecture for enterprise-scale data processing. Built Data Preparation Pipeline for reliable daily ingestion and Data Enrichment Pipeline featuring advanced data transformation techniques. Implemented sophisticated 'data flattening' process to create unique entity relationships, enabling precise analysis. Comprehensive logging system with detailed metrics tracking ensures full transparency and auditability.",
     impact: "46M+ daily news articles processed with 99.7% accuracy. Automated batching of 1,000 articles ensures stable loads. Advanced monitoring system tracks processing time, data quality scores, and volume comparisons for immediate issue detection.",
     techStack: ["Python", "Azure Data Factory", "PySpark", "Databricks", "SQL Database", "Logging & Monitoring", "Business Intelligence"],
-    image: "/images/deloitte.png",
+    image: "/images/companies/deloitte.png",
     status: "Production"
   },
   {
@@ -98,7 +98,7 @@ export const projects = [
     description: "Developed generative AI private LLM for automated document processing",
     impact: "Automated RFP/RFI/SoW response generation",
     techStack: ["Python", "Langchain", "Vector Database", "Llama-2", "GPT4ALL"],
-    image: "/images/atos.jpg",
+    image: "/images/companies/atos.jpg",
     status: "Completed"
   },
   {
@@ -109,7 +109,7 @@ export const projects = [
     description: "Led the end-to-end development of an intelligent nursing diagnostic system. I designed and implemented a Retrieval-Augmented Generation (RAG) system that references a knowledge base of 80+ documented nursing scenarios. When new patient data is entered, the system retrieves the top 3 most similar scenarios to inform its diagnostic suggestions.",
     impact: "Crucially, I architected a Human-in-the-Loop (HITL) feedback mechanism. Nurses can provide feedback on the AI's suggestions, which is then vectorized and stored in our Deeplake (Vector DB). This creates a self-improving system where accuracy and relevance continuously increase with each interaction.",
     techStack: ["RAG", "Human-in-the-loop", "GPT-4", "Vector Database", "Data Lake", "Python", "API Development"],
-    image: "/images/gwu.png",
+    image: "/images/companies/gwu.png",
     status: "Research"
   },
   {
@@ -120,7 +120,7 @@ export const projects = [
     description: "I was responsible for the entire audio processing pipeline. My primary role was to extract and analyze audio from raw video footage, tackling the significant challenge of low-quality audio in Korean. I developed a noise reduction process using spectral subtraction and a filtering logic to isolate the child's voice from background noise and parental speech, significantly improving the quality of data for the model.",
     impact: "This work was critical for enabling the analysis of 'in-the-wild' videos, a key goal of our research. By successfully processing the audio data, I helped create a system that provides objective, data-driven insights to support clinicians, making behavioral analysis more efficient and accessible.",
     techStack: ["Audio Processing", "Noise Reduction", "Spectral Subtraction", "Korean NLP", "Speech Recognition", "Python", "Multi-modal AI"],
-    image: "/images/gwu.png",
+    image: "/images/companies/gwu.png",
     status: "Research"
   },
   {
@@ -131,7 +131,7 @@ export const projects = [
     description: "Developed a multimodal AI system enabling the Pepper robot to navigate autonomously. The robot uses Microsoft HoloLens for real-time environment scanning, obstacle detection, and spatial mapping.",
     impact: "This research aimed to give Pepper spatial awareness for free movement in new environments, with future goals of recognizing and remembering individuals. LLM was used for conversational interaction.",
     techStack: ["Microsoft HoloLens", "Computer Vision", "ROS", "Python", "Robotics", "LLM", "OpenAI", "OpenCV"],
-    image: "/images/gwu.png",
+    image: "/images/companies/gwu.png",
     status: "Research"
   },
   {
@@ -142,7 +142,7 @@ export const projects = [
     description: "I took over a stalled project that used a traditional NLP model and a Unity 3D avatar. I completely redesigned the system by integrating the GPT API for fluid conversation and OpenAI's Whisper API for robust speech-to-text and text-to-speech capabilities. The virtual avatar was replaced with a physical Pepper robot for tangible user interaction.",
     impact: "This overhaul transformed a non-interactive prototype into a successful project. The new system was not only presented at a university poster session but was also significant enough for my supervising professor to present at an academic conference.",
     techStack: ["GPT API", "Whisper API", "STT/TTS", "Pepper Robot", "Human-Robot Interaction", "Python", "API Integration", "OpenAI", "Unity 3D"],
-    image: "/images/gwu.png",
+    image: "/images/companies/gwu.png",
     status: "Research"
   },
 ];
