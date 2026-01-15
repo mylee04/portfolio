@@ -35,7 +35,8 @@ export default function Contact() {
               Let's Connect!
             </h1>
             <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300">
-              <p>{personalInfo.workEmail}</p>
+              <p>{personalInfo.email} (personal)</p>
+              <p>{personalInfo.workEmail} (work)</p>
               <p>{personalInfo.workPhone} (work)</p>
             </div>
           </div>

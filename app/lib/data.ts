@@ -29,7 +29,7 @@ export const projects = [
     description: "Developed a cross-platform desktop notification system for Claude Code that enhances developer productivity by providing real-time alerts when AI tasks complete, errors occur, or user input is needed. Features native desktop notifications across macOS, Windows, and Linux with customizable sound alerts, global and project-specific settings, and seamless integration with Claude Code workflows.",
     impact: "Eliminated context switching for developers by providing instant awareness of Claude Code status, reducing idle time and improving workflow efficiency. Homebrew package distribution ensures easy installation and updates for the developer community. Quick aliases and flexible configuration options make it adaptable to individual workflow preferences.",
     techStack: ["Go", "Cross-platform Development", "Desktop Notifications", "Homebrew", "CLI Development", "System APIs", "Configuration Management"],
-    image: "/images/projects/unseen-icon.png",
+    image: "/images/projects/3dots.png",
     status: "Completed",
     github: "https://github.com/mylee04/claude-notify"
   },
@@ -41,7 +41,7 @@ export const projects = [
     description: "Anonymous voice support app for people preparing for jobs or major exams, or pushing through burnout and depression. No follows, no networking, no influencer dynamics.",
     impact: "Creates a safe, low-pressure space where encouragement feels human and sincere.",
     techStack: ["React Native", "Expo", "TypeScript", "Supabase", "Supabase Auth", "Whisper API (STT)", "PostHog", "Voice Recording"],
-    image: "/images/projects/payloadapp-icon.png",
+    image: "/images/projects/unseen-icon.png",
     status: "Active",
     appStore: "https://apps.apple.com/us/app/unseen-voice/id6757136538",
     detailsPath: "/projects/unseen"
@@ -54,7 +54,7 @@ export const projects = [
     description: "Mobile invoicing for field technicians, dog walkers, and private tutors. Create invoices on-site with voice input or templates, attach proof photos, and share with clients immediately.",
     impact: "Replaces paper forms with faster billing, clearer documentation, and more professional client communication.",
     techStack: ["React Native", "Expo", "TypeScript", "Supabase", "Supabase Auth", "Whisper API (STT)", "PostHog", "PDF Generation"],
-    image: "/images/projects/3dots.png",
+    image: "/images/projects/payloadapp-icon.png",
     status: "Completed",
     appStore: "https://apps.apple.com/us/app/payloadapp-invoice-generator/id6754825079",
     detailsPath: "/projects/payloadapp"
