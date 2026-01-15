@@ -94,6 +94,7 @@ export default function PayloadAppProjectPage() {
           <div className="flex flex-wrap gap-2">
             {[
               "React Native",
+              "Expo",
               "TypeScript",
               "Supabase",
               "Supabase Auth",
