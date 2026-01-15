@@ -72,7 +72,7 @@ export default function Projects() {
                   </div>
                 </div>
 
-                <div className="mt-auto flex gap-2">
+                <div className="mt-auto flex flex-wrap gap-2">
                   {(project as any).github && (
                     <a
                       href={(project as any).github}
@@ -83,9 +83,19 @@ export default function Projects() {
                       View on GitHub →
                     </a>
                   )}
-                  {(project.company.includes('GWU') || project.company.includes('Bauman')) && (
+                  {(project as any).appStore && (
+                    <a
+                      href={(project as any).appStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 border border-black dark:border-white text-black dark:text-white px-4 py-2 text-sm hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-200 text-center"
+                    >
+                      App Store →
+                    </a>
+                  )}
+                  {(project as any).detailsPath && (
                     <Link
-                      href={`/projects/${project.id}`}
+                      href={(project as any).detailsPath}
                       className="flex-1 border border-black dark:border-white text-black dark:text-white px-4 py-2 text-sm hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-200 text-center"
                     >
                       Learn More →

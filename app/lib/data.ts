@@ -22,40 +22,42 @@ export const experiences = [
 // projects
 export const projects = [
   {
-    id: "claude-code-subagents",
-    title: "Claude Code Subagents",
-    company: "Personal Project",
-    period: "2025 - Present",
-    description: "A comprehensive collection of AI agents that work as a personalized development team. Features dynamic team assembly where the agent-assembler reads project's claude.md file and generates custom agents tailored to the tech stack. Includes 15+ specialized agents organized by domain (development, security, infrastructure, data/AI) with two types of conductor agents: Agent Creators that generate new agent files and Agent Orchestrators that coordinate existing agents for complex tasks.",
-    impact: "Revolutionizes AI-assisted development by providing a dynamic, project-specific AI team. The two-layer system ensures developers have the right agents for their specific project through generation, while those agents work together effectively through orchestration. Enables complex task breakdown and distribution with no duplicate effort or gaps in coverage.",
-    techStack: ["AI Agent Design", "Prompt Engineering", "YAML", "Markdown", "Shell Scripting", "Agent Orchestration", "Claude Code Integration", "Dynamic Team Assembly"],
-    image: "/images/projects/3dots.png",
-    status: "Active",
-    github: "https://github.com/mylee04/claude-code-subagents"
-  },
-  {
     id: "claude-notify",
     title: "Claude-Notify: Cross-Platform Desktop Notifications for AI Workflows",
     company: "Personal Project",
-    period: "2025 - Present",
+    period: "2025 July",
     description: "Developed a cross-platform desktop notification system for Claude Code that enhances developer productivity by providing real-time alerts when AI tasks complete, errors occur, or user input is needed. Features native desktop notifications across macOS, Windows, and Linux with customizable sound alerts, global and project-specific settings, and seamless integration with Claude Code workflows.",
     impact: "Eliminated context switching for developers by providing instant awareness of Claude Code status, reducing idle time and improving workflow efficiency. Homebrew package distribution ensures easy installation and updates for the developer community. Quick aliases and flexible configuration options make it adaptable to individual workflow preferences.",
     techStack: ["Go", "Cross-platform Development", "Desktop Notifications", "Homebrew", "CLI Development", "System APIs", "Configuration Management"],
     image: "/images/projects/3dots.png",
-    status: "Active",
+    status: "Completed",
     github: "https://github.com/mylee04/claude-notify"
   },
   {
-    id: "claude-arena",
-    title: "Claude Arena: Gamified Analytics Platform for AI Code Generation",
+    id: "unseen",
+    title: "Unseen: Anonymous Voice Support",
     company: "Personal Project",
-    period: "2025 - Present",
-    description: "Built an innovative gamification platform that transforms Claude Code usage analytics into a competitive experience. The platform imports Sniffly analytics data and creates engaging leaderboards beyond traditional spending metrics, featuring categories like 'The Precisionist' for lowest error rates and 'Speed Demon' for fastest task completions. Includes comprehensive user profiles, achievement badges, and a planned data marketplace for analytics insights.",
-    impact: "Revolutionizes how developers understand and optimize their AI coding practices by making performance metrics engaging and actionable. Fosters a community of AI-assisted developers who can learn from each other's patterns and best practices. The planned data marketplace will enable new revenue streams while providing valuable insights into AI-assisted development workflows.",
-    techStack: ["TypeScript", "Next.js", "Analytics Integration", "Data Visualization", "Gamification Design", "User Profiling", "Marketplace Architecture", "Sniffly API"],
+    period: "Dec 2025 - Present",
+    description: "Anonymous voice support app for people preparing for jobs or major exams, or pushing through burnout and depression. No follows, no networking, no influencer dynamics.",
+    impact: "Creates a safe, low-pressure space where encouragement feels human and sincere.",
+    techStack: ["React Native", "Supabase", "Supabase Auth", "Whisper API (STT)", "PostHog", "Voice Recording"],
     image: "/images/projects/3dots.png",
     status: "Active",
-    github: "https://github.com/mylee04/claude-arena"
+    appStore: "https://apps.apple.com/us/app/unseen-voice/id6757136538",
+    detailsPath: "/projects/unseen"
+  },
+  {
+    id: "payloadapp",
+    title: "PayLoadApp: Mobile Invoice Generator",
+    company: "Personal Project",
+    period: "Aug 2025 - Oct 2025",
+    description: "Mobile invoicing for field technicians, dog walkers, and private tutors. Create invoices on-site with voice input or templates, attach proof photos, and share with clients immediately.",
+    impact: "Replaces paper forms with faster billing, clearer documentation, and more professional client communication.",
+    techStack: ["React Native", "Supabase", "Supabase Auth", "Whisper API (STT)", "PostHog", "PDF Generation"],
+    image: "/images/projects/3dots.png",
+    status: "Completed",
+    appStore: "https://apps.apple.com/us/app/payloadapp-invoice-generator/id6754825079",
+    detailsPath: "/projects/payloadapp"
   },
   {
     id: "aerospace-ai-thesis",
@@ -66,27 +68,17 @@ export const projects = [
     impact: "Achieved 95-97% predictive accuracy by generating a proprietary dataset from scratch via complex ANSYS simulations.",
     techStack: ["ANSYS (FEA)", "Machine Learning", "Computer Vision", "Data Generation", "Python"],
     image: "/images/companies/bmstu.png",
-    status: "Academic"
+    status: "Academic",
+    detailsPath: "/projects/aerospace-ai-thesis"
   },
   {
-    id: "agentic-review-ai",
-    title: "AI-Driven Content Analysis & Classification System",
+    id: "audit-risk-intelligence-platform",
+    title: "Audit Risk Intelligence Platform",
     company: "Deloitte",
-    period: "2024",
-    description: "Implemented comprehensive AI system for automated content review, relevance validation, and risk category classification. Built sophisticated models to perform company-specific relevance checks against strict business criteria, moving beyond vendor tags to ensure precise data quality. AI models classify content into standardized categories including financial performance, legal/regulatory issues, and reputational concerns.",
-    impact: "40% efficiency improvement, 50% reduction in manual review time. AI-driven relevance validation ensures only truly relevant content proceeds to downstream analysis, significantly improving data quality and analytical accuracy.",
-    techStack: ["Python", "RAG", "Azure", "LLM", "AI Classification", "Vector Database", "Business Intelligence"],
-    image: "/images/companies/deloitte.png",
-    status: "Production"
-  },
-  {
-    id: "realtime-data-processing",
-    title: "Enterprise Data Pipeline & Processing System",
-    company: "Deloitte", 
-    period: "2024",
-    description: "Designed and implemented comprehensive dual-pipeline architecture for enterprise-scale data processing. Built Data Preparation Pipeline for reliable daily ingestion and Data Enrichment Pipeline featuring advanced data transformation techniques. Implemented sophisticated 'data flattening' process to create unique entity relationships, enabling precise analysis. Comprehensive logging system with detailed metrics tracking ensures full transparency and auditability.",
-    impact: "46M+ daily news articles processed with 99.7% accuracy. Automated batching of 1,000 articles ensures stable loads. Advanced monitoring system tracks processing time, data quality scores, and volume comparisons for immediate issue detection.",
-    techStack: ["Python", "Azure Data Factory", "PySpark", "Databricks", "SQL Database", "Logging & Monitoring", "Business Intelligence"],
+    period: "2024 - Present",
+    description: "Led the data pipeline and audit-risk labeling workflow for global news intelligence.\n\n• Built a data ETL pipeline for news metadata and source-credibility labeling across 17 countries, partnering with regional Deloitte SMEs to map trusted sources\n• Built relevance + audit-risk classification using title/summary/company tags; curated a goldenset with SMEs for evaluation\n• Implemented client-specific processing and DUNS-based entity updates to handle M&A changes near real time; processes 40–50K articles/day and ~20K labeled records\n• Delivered RiskSensing API on AKS with QA test suites, OpenTelemetry monitoring, and LLM cost optimization from ~$40/day to ~$6/day (GPT-4/4o/5)",
+    impact: "Keeps audit-risk data structured, current, and reliable for downstream RiskSensing, API Platform, and Omnia teams.",
+    techStack: ["Python", "Azure", "AKS", "OpenTelemetry", "LLM", "RAG", "Data Pipeline Development", "Risk Classification", "API Development", "SQL Database"],
     image: "/images/companies/deloitte.png",
     status: "Production"
   },
@@ -95,9 +87,9 @@ export const projects = [
     title: "Private LLM with RAG",
     company: "Atos Zdata",
     period: "2023",
-    description: "Developed generative AI private LLM for automated document processing",
-    impact: "Automated RFP/RFI/SoW response generation",
-    techStack: ["Python", "Langchain", "Vector Database", "Llama-2", "GPT4ALL"],
+    description: "Developed a private LLM with RAG using LangChain and vector databases (FAISS, Qdrant) to support Q&A, summarization, and enterprise document retrieval. Built an auto-updating vector index that detects document changes in real time and compared LLMs (Llama-2, Falcon, GPT4ALL) for accuracy and latency.",
+    impact: "Enabled automated draft responses for RFP/RFI/SoW workflows and faster retrieval across internal knowledge bases.",
+    techStack: ["Python", "Langchain", "RAG", "FAISS", "Qdrant", "Llama-2", "Falcon", "GPT4ALL"],
     image: "/images/companies/atos.jpg",
     status: "Completed"
   },
@@ -149,11 +141,11 @@ export const projects = [
 
 projects.sort((a, b) => {
   const parsePeriod = (periodStr: string) => {
-    if (periodStr.includes('-')) {
-      return parseInt(periodStr.split('-')[1]);
-    } else {
-      return parseInt(periodStr);
+    const years = periodStr.match(/\d{4}/g);
+    if (!years || years.length === 0) {
+      return 0;
     }
+    return parseInt(years[years.length - 1], 10);
   };
   const periodA = parsePeriod(a.period);
   const periodB = parsePeriod(b.period);
@@ -249,7 +241,7 @@ export const publications = [
     type: "Journal Article",
     status: "Published",
     abstract: "Standardized nursing languages play a crucial role in facilitating holistic nursing care, but their full benefits are still being realized. However, the implementation of NNN linkages and their impact on nursing processes and nursing home (NH) residents' outcomes, as well as the identification of facility and resident factors, remain unexplored. The purpose of this study was to examine (a) frequently occurring NNN linkages and (b) related facility and resident factors on the use of NANDA, NIC, and NOC for NH residents. Data were collected from 273 residents in 19 NHs in Korea 19 NHs in Korea, with structured questionnaires administered to NH registered nurses using a newly developed smartphone application. Descriptive statistics, ANOVA, and ANCOVA were used for the data analysis. We identified that factors, such as case mix index (resident acuity), age of resident, year of facility establishment, facility ownership status, and admission period of residents, are related to the use of NANDA, NIC, and NOC. Nine NNN linkages were newly identified in this study, mostly centered on fall prevention. The findings provide various approaches to address the risk of falls in NHs considering environmental, physical, and psychological factors. This study contributes to the foundation of evidence related to NHs by collecting specific data on the nursing process for the physiological, behavioral, safety, family, health system, and community areas applied to the residents of long-term care facilities at the national level. Future research in different settings and tailored population is needed.",
-    keywords: ["Nursing Informatics", "Digital Health", "Standardized Nursing Language", "Mobile Health (mHealth)", "Long-Term Care"],    
+    keywords: ["Nursing Informatics", "Digital Health", "Standardized Nursing Language", "Mobile Health (mHealth)", "Long-Term Care"],
     link: "https://academic.oup.com/innovateage/article/8/Supplement_1/866/7938568?login=false"
   },
   {
@@ -261,7 +253,7 @@ export const publications = [
     type: "Conference Paper",
     status: "Published",
     abstract: "With the increase of prevalence in autism, the need for efficient public health support has been amplified. Socially-assistive robots (SARs) have been found effective in engaging and interacting with autistic children, however, the perception intelligence during interaction still needs more domain-specific knowledge in terms of understanding children's behaviors. The Family Observation Schedule-Second Version (FOS-II) is one of the key methods in assessing parent-child interactions in developmental disabilities, yet its manual annotation demands considerable time and effort. This study proposes a multimodal artificial intelligence (AI) model using video and audio inputs for automated FOS-II annotation. Utilizing advanced deep learning for behavior recognition, this method offers rapid, cost-effective FOS-II scaling. It will thus enhance the capability of socially assistive robots to understand human behaviors and support the advancement of digital health research for children with autism. The visual perception in home settings are most likely based on uncontrolled environments, so it is crucial to develop algorithms that can robustly work with video-log data with uncontrolled quality. Ultimately, it aims to ease the burden on parents and caregivers, streamlining the monitoring and treatment of challenging behaviors in autism.",
-    keywords: ["Multimodal AI", "Speech Recognition", "Behavior Recognition", "Autism Spectrum Disorder", "Socially-Assistive Robotics (SAR)", "Computer Vision"],    
+    keywords: ["Multimodal AI", "Speech Recognition", "Behavior Recognition", "Autism Spectrum Disorder", "Socially-Assistive Robotics (SAR)", "Computer Vision"],
     link: "https://ieeexplore.ieee.org/document/10731189",
     conferenceDate: "26-30 August 2024",
     ieeeXploreDate: "30 October 2024"
@@ -288,7 +280,7 @@ export const publications = [
     status: "Graduated with Red Diploma",
     abstract: "This thesis presents a hybrid methodology combining finite element analysis (FEA) with machine learning to enhance defect detection and lifecycle assessment for composite aerospace elements.",
     keywords: ["Machine Learning", "FEA", "ANSYS", "Computer Vision", "Aerospace Engineering", "Predictive Maintenance"],
-    link: "/projects/aerospace-ai-thesis" 
+    link: "/projects/aerospace-ai-thesis"
   }
 ];
 
