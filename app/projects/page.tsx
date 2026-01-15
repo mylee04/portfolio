@@ -1,11 +1,70 @@
 "use client";
 
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { projects } from "../lib/data";
 
 export default function Projects() {
   const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+  const orderedProjects = useMemo(() => {
+    const parsePeriod = (periodStr: string) => {
+      const years = periodStr.match(/\d{4}/g);
+      if (!years || years.length === 0) {
+        return 0;
+      }
+      return parseInt(years[years.length - 1], 10);
+    };
+
+    const sorted = [...projects].sort((a, b) => {
+      return parsePeriod(b.period) - parsePeriod(a.period);
+    });
+
+    const deloitteIndex = sorted.findIndex(
+      (project) => project.id === "audit-risk-intelligence-platform" || project.company === "Deloitte"
+    );
+
+    if (deloitteIndex === -1) {
+      return sorted;
+    }
+
+    const [deloitte] = sorted.splice(deloitteIndex, 1);
+    const insertIndex = Math.min(2, sorted.length);
+    sorted.splice(insertIndex, 0, deloitte);
+
+    return sorted;
+  }, []);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [spans, setSpans] = useState<number[]>([]);
+
+  const calculateSpans = () => {
+    if (!gridRef.current) return;
+    const gridStyles = window.getComputedStyle(gridRef.current);
+    const rowHeight = parseFloat(gridStyles.getPropertyValue("grid-auto-rows"));
+    const rowGap = parseFloat(gridStyles.getPropertyValue("gap"));
+
+    const nextSpans = orderedProjects.map((_, index) => {
+      const card = cardRefs.current[index];
+      if (!card || !rowHeight) {
+        return 1;
+      }
+      const height = card.getBoundingClientRect().height;
+      return Math.ceil((height + rowGap) / (rowHeight + rowGap));
+    });
+
+    setSpans(nextSpans);
+  };
+
+  useEffect(() => {
+    calculateSpans();
+    if (typeof ResizeObserver === "undefined") return;
+    const observer = new ResizeObserver(() => calculateSpans());
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+    return () => observer.disconnect();
+  }, [orderedProjects.length]);
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
@@ -20,10 +79,21 @@ export default function Projects() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+        <div
+          ref={gridRef}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[8px]"
+        >
+          {orderedProjects.map((project, index) => {
+            const displayStack = project.techStack.slice(0, 6);
+            const extraCount = project.techStack.length - displayStack.length;
+
+            return (
             <div
               key={project.id}
+              ref={(el) => {
+                cardRefs.current[index] = el;
+              }}
+              style={spans.length > 0 ? { gridRowEnd: `span ${spans[index] || 1}` } : undefined}
               className="bg-gray-50 dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col"
             >
               <div className="h-48 overflow-hidden bg-white flex items-center justify-center border-b border-gray-200 dark:border-gray-800">
@@ -51,17 +121,17 @@ export default function Projects() {
 
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-blue-600 dark:text-blue-400 text-sm mb-3">{project.company} • {project.period}</p>
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 flex-1">{project.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">{project.description}</p>
                 
                 <div className="mb-4">
                   <p className="text-green-600 dark:text-green-400 text-sm font-medium">Impact:</p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm">{project.impact}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-2">{project.impact}</p>
                 </div>
 
                 <div className="mb-4">
                   <p className="text-gray-500 text-xs mb-2">Tech Stack:</p>
                   <div className="flex flex-wrap gap-1">
-                    {project.techStack.map((tech, index) => (
+                    {displayStack.map((tech, index) => (
                       <span
                         key={index}
                         className="px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs rounded"
@@ -69,6 +139,11 @@ export default function Projects() {
                         {tech}
                       </span>
                     ))}
+                    {extraCount > 0 && (
+                      <span className="px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-xs rounded">
+                        +{extraCount}
+                      </span>
+                    )}
                   </div>
                 </div>
 
@@ -104,7 +179,7 @@ export default function Projects() {
                 </div>
               </div>
             </div>
-          ))}
+          )})}
         </div>
       </div>
     </div>

@@ -27,22 +27,6 @@ export default function Home() {
             Automate everything possible.
           </p>
 
-          {/* Quick Stats */}
-          <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm">
-            <div className="flex items-center gap-2">
-              <span className="text-green-500">📊</span>
-              <span>My Research Contributions</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-blue-500">🚀</span>
-              <span>40% Efficiency Improvement</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-purple-500">💾</span>
-              <span>46M+ Daily News Data Processing</span>
-            </div>
-          </div>
-
           {/* Navigation Links */}
           <div className="flex flex-wrap gap-4 mt-8">
             <Link
